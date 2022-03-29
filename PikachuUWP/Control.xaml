@@ -1,0 +1,309 @@
+﻿<UserControl
+    x:Class="PikachuUWP.Control"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PikachuUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="500"
+    d:DesignWidth="500">
+    <UserControl.Resources>
+        <Storyboard x:Key="ataqueleve">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="417.688"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="620"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="417.688"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="bocatotal">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0.6"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0.2"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="pocion">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="bocatotal">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0.55"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.45"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.2"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-17.963"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="12.38"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="dano">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="417.688"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="328"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="417.688"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="bocatotal">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.01"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0.2"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ojod">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.35"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ojod">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-1.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ojod">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-15"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ojoi">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ataquefuerte">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-356.274"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ellipse">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ellipse1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ojod">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ojoi">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="417.688"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="558"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="417.688"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="derrotado">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.9"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.061"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.031"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-16"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-191.125"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="172.875"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="escudoregenerar">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.9"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.089"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.216"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-16"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="23.375"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-16"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-38.625"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="417.688"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="477"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="417.688"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="pikachu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="356.888"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="333"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="356.888"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="bocatotal">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0.2"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    
+    
+    <Grid x:Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="416*"/>
+            <ColumnDefinition Width="42*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="355*"/>
+            <RowDefinition Height="34*"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.ColumnSpan="3" Grid.RowSpan="4" Source="Fondo.png" Stretch="UniformToFill"/>
+
+        <ProgressBar x:Name="pbVida" Grid.Column="1" Margin="4.8,5,5,5" Value="50"/>
+        <Image x:Name="imgCorazon" Margin="0,0,0.2,0" Source="corazon.png"/>
+        <Image x:Name="imgEscudo" Margin="0" RenderTransformOrigin="0.488,1.548" Grid.Row="1" Source="Escudo.png"/>
+        <ProgressBar x:Name="pbEscudo" Grid.Column="1" Margin="4.8,5,5,5.8" Grid.Row="1" Value="75" Foreground="#FFFFF200"/>
+        <Image x:Name="imgPocima" Grid.Column="3" Margin="0" Grid.RowSpan="2" Source="Pócima.png" PointerReleased="usarPocima"/>
+        <TextBlock x:Name="txtNomPokemon" Grid.Column="1" Margin="0" Grid.Row="3" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Verdana" Foreground="White"><Run Text="PIKACHU">
+                
+            </Run></TextBlock>
+        <Canvas x:Name="pikachu" Grid.Column="1" HorizontalAlignment="Center" Height="356.888" Grid.Row="2" VerticalAlignment="Center" Width="417.688" RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.9"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-16"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Path Data="M8.6679573,0.50623322 C21.405134,0.12787628 46.852486,17.00705 70.99292,42.8384 83.510185,56.232434 93.602306,69.814343 100.24618,81.556213 L101.18018,83.251218 102.50699,82.64771 C120.51916,74.882534 141.66381,70.410889 164.28049,70.410888 184.84111,70.410889 204.18516,74.106464 221.06515,80.612476 L224.31541,81.938443 225.04408,80.61574 C231.10733,69.864614 239.54522,57.870886 249.76915,45.93821 277.03296,14.117744 306.67318,-5.2187958 315.97247,2.7488403 325.27176,10.716473 310.70864,42.971102 283.44484,74.791567 274.92489,84.735463 266.17288,93.460226 257.88208,100.51357 L256.64009,101.55098 258.0021,102.75087 C273.91824,117.12062 283.41099,135.24121 283.41099,154.93489 283.41099,201.61621 230.07444,239.45889 164.28049,239.45889 98.48653,239.45889 45.14999,201.61621 45.149992,154.93489 45.14999,135.24121 54.642748,117.12062 70.55887,102.75087 L71.227262,102.16204 70.32419,101.52505 C60.30938,94.310246 49.322141,84.597978 38.593058,73.117379 9.9821701,42.502443 -5.95858,10.905956 2.9883957,2.5446472 4.3863602,1.2381897 6.3092194,0.57630157 8.6679573,0.50623322 z" Height="239.959" Canvas.Left="61.503" Stretch="Fill" Stroke="Black" Canvas.Top="75.448" Width="319.279">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE8FF00" Offset="0"/>
+                        <GradientStop Color="#FFFAFFC6" Offset="1"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+            <Ellipse Height="48.927" Canvas.Left="137.775" Stroke="Black" Canvas.Top="239.034" Width="51.918" Fill="#FFFF4646">
+
+            </Ellipse>
+            <Ellipse x:Name="ellipse" Fill="Black" Height="40.573" Canvas.Left="240.014" Stroke="Black" Canvas.Top="173.999" Width="48.329" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="ellipse1" Fill="Black" Height="40.573" Canvas.Left="158.659" Stroke="Black" Canvas.Top="173.999" Width="48.329" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="ojod" Fill="White" Height="15.513" Canvas.Left="248.367" Stroke="Black" Canvas.Top="178.999" Width="20.287" RenderTransformOrigin="0.517,2.067">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="ojoi" Fill="White" Height="15.513" Canvas.Left="179.549" Stroke="Black" Canvas.Top="178.999" Width="20.287" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse Height="7.756" Canvas.Left="218.745" Canvas.Top="229.858" Width="7.756" Stroke="Black" Fill="Black"/>
+            <Grid x:Name="bocatotal" Height="44.153" Canvas.Left="206.391" Canvas.Top="257.531" Width="38.187" RenderTransformOrigin="0.5,0.5">
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.2"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Ellipse x:Name="boca" Fill="#FFFF6363" Stroke="Black" RenderTransformOrigin="0.5,0.5"/>
+                <Path Stroke="Black" Data="M18.575471,0.5 C27.093547,0.50000024 34.276013,1.742434 36.493352,3.4387214 L36.571061,3.5011131 33.764081,6.8888718 33.763776,6.8889682 C30.38831,7.9202549 24.843489,8.5929996 18.575471,8.5929996 11.021706,8.5929996 4.5182664,7.6159489 1.596282,6.2117826 L1.4296741,6.1290366 0.5,3.5685226 0.53740752,3.5352165 C2.6043694,1.7897604 9.8966777,0.50000024 18.575471,0.5 z" Margin="0.549,25.06,0.567,10" Stretch="Fill">
+                    <Path.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFFF5555" Offset="0"/>
+                            <GradientStop Color="#FFFF1616" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Path.Fill>
+                </Path>
+            </Grid>
+            <Ellipse Height="48.927" Canvas.Left="259.775" Stroke="Black" Canvas.Top="239.034" Width="51.918" Fill="#FFFF4646">
+
+            </Ellipse>
+            <Ellipse HorizontalAlignment="Left" Height="74.94" Stroke="Black" VerticalAlignment="Top" Width="34.368" RenderTransformOrigin="0.5,0.5" Canvas.Left="72.802" Canvas.Top="68.262">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF303030" Offset="1"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-43.27"/>
+                        <TranslateTransform/>
+
+                    </TransformGroup>
+
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse HorizontalAlignment="Left" Height="74.94" Stroke="Black" VerticalAlignment="Top" Width="34.368" RenderTransformOrigin="0.5,0.5" Canvas.Left="337.122" Canvas.Top="68.858">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="1"/>
+                        <GradientStop Color="#FF2D2D2D" Offset="0.013"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-137.929"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+        </Canvas>
+        <Image x:Name="imgEscudoRecuperacion" Grid.Column="2" Margin="0,309.638,0,0" Grid.RowSpan="2" Source="Comida.png" PointerReleased="usarEscudo" Grid.Row="2"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1800
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikachuUWP", "PikachuUWP\PikachuUWP.csproj", "{DE879FE4-558B-40E2-894A-44A337958E79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Debug|ARM.ActiveCfg = Debug|ARM
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Debug|ARM.Build.0 = Debug|ARM
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Debug|ARM.Deploy.0 = Debug|ARM
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Debug|ARM64.Build.0 = Debug|ARM64
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Debug|x64.ActiveCfg = Debug|x64
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Debug|x64.Build.0 = Debug|x64
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Debug|x64.Deploy.0 = Debug|x64
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Debug|x86.ActiveCfg = Debug|x86
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Debug|x86.Build.0 = Debug|x86
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Debug|x86.Deploy.0 = Debug|x86
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Release|ARM.ActiveCfg = Release|ARM
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Release|ARM.Build.0 = Release|ARM
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Release|ARM.Deploy.0 = Release|ARM
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Release|ARM64.ActiveCfg = Release|ARM64
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Release|ARM64.Build.0 = Release|ARM64
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Release|ARM64.Deploy.0 = Release|ARM64
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Release|x64.ActiveCfg = Release|x64
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Release|x64.Build.0 = Release|x64
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Release|x64.Deploy.0 = Release|x64
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Release|x86.ActiveCfg = Release|x86
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Release|x86.Build.0 = Release|x86
+		{DE879FE4-558B-40E2-894A-44A337958E79}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61E455F8-6880-4D0B-9E8C-9F91895E85E4}
+	EndGlobalSection
+EndGlobal
